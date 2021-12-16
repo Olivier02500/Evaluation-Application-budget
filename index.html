@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluation-Application-budget</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<div id="container">
+    <section id="depenses">
+        <h2>Les dépenses fixes</h2>
+        <label for="loyer">Loyer et charge :</label><input type="number" id="loyer" class="input">
+        <label for="facture">Eau/électricité/gaz :</label><input type="number" id="facture" class="input">
+        <label for="internet">Téléphone et internet :</label><input type="number" id="internet" class="input">
+        <label for="voiture">Assurance voiture :</label><input type="number" id="voiture" class="input">
+
+        <h2>Les dépenses courantes</h2>
+        <label for="course">Courses :</label><input type="number" id="course" class="input">
+        <label for="transport">Essence/Frais de transport en commun :</label><input type="number" id="transport" class="input">
+        <label for="activite">Activités sportives et culturelles :</label><input type="number" id="activite" class="input">
+
+        <h2>Les dépenses occasionnelles</h2>
+        <label for="sortie">Sorties :</label><input type="number" id="sortie" class="input">
+        <label for="autre">Les autres dépenses :</label><input type="number" id="autre" class="input">
+
+
+    </section>
+
+
+    <section id="recette">
+        <h2>les recettes</h2>
+        <label for="salaire">Le salaire :</label><input type="number" id="salaire" class="input">
+        <label for="aide">Les aides (allocations, etc) :</label><input type="number" id="aide" class="input">
+        <label for="rente">Les rentes ;</label><input type="number" id="rente" class="input">
+        <label for="autres">Autres :</label><input type="number" id="autres" class="input">
+
+
+    </section>
+
+    <section id="epargnes">
+        <h2>Epargne</h2>
+        <label for="epargne">Epragne</label><input type="number" id="epargne" class="input">
+
+    </section>
+
+    <section id="resultat">
+        <h2>Resultat</h2>
+
+        <h3>total dépenses</h3>
+        <div id="result-depenses"></div>
+
+        <h3>total recette</h3>
+        <div id="result-recette"></div>
+
+        <h3>total épargne</h3>
+        <div id="result-epargne"></div>
+
+        <h3>resultat total</h3>
+        <div id="result">
+        </div>
+    </section>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
