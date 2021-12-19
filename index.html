@@ -9,19 +9,20 @@
 <div id="container">
     <section id="depenses">
         <h2>Les dépenses fixes</h2>
-        <label for="loyer">Loyer et charge :</label><input type="number" id="loyer" class="input">
-        <label for="facture">Eau/électricité/gaz :</label><input type="number" id="facture" class="input">
-        <label for="internet">Téléphone et internet :</label><input type="number" id="internet" class="input">
-        <label for="voiture">Assurance voiture :</label><input type="number" id="voiture" class="input">
+        <label for="loyer">Loyer et charge :</label><input value="0" type="number" id="loyer" class="input">
+        <label for="facture">Eau/électricité/gaz :</label><input value="0" type="number" id="facture" class="input">
+        <label for="internet">Téléphone et internet :</label><input value="0" type="number" id="internet" class="input">
+        <label for="voiture">Assurance voiture :</label><input value="0" type="number" id="voiture" class="input">
 
         <h2>Les dépenses courantes</h2>
-        <label for="course">Courses :</label><input type="number" id="course" class="input">
-        <label for="transport">Essence/Frais de transport en commun :</label><input type="number" id="transport" class="input">
-        <label for="activite">Activités sportives et culturelles :</label><input type="number" id="activite" class="input">
+        <label for="course">Courses :</label><input value="0" type="number" id="course" class="input">
+        <label for="transport">Essence/Frais de transport en commun :</label><input value="0" type="number" id="transport" class="input">
+        <label for="activite">Activités sportives et culturelles :</label><input value="0" type="number" id="activite" class="input">
 
         <h2>Les dépenses occasionnelles</h2>
-        <label for="sortie">Sorties :</label><input type="number" id="sortie" class="input">
-        <label for="autre">Les autres dépenses :</label><input type="number" id="autre" class="input">
+        <label for="sortie">Sorties :</label><input value="0" type="number" id="sortie" class="input">
+        <label for="autre">Les autres dépenses :</label><input value="0" type="number" id="autre" class="input">
+        <button id="buttonDepense">calcule</button>
 
 
     </section>
@@ -29,17 +30,18 @@
 
     <section id="recette">
         <h2>les recettes</h2>
-        <label for="salaire">Le salaire :</label><input type="number" id="salaire" class="input">
-        <label for="aide">Les aides (allocations, etc) :</label><input type="number" id="aide" class="input">
-        <label for="rente">Les rentes ;</label><input type="number" id="rente" class="input">
-        <label for="autres">Autres :</label><input type="number" id="autres" class="input">
-
+        <label for="salaire">Le salaire :</label><input value="0" type="number" id="salaire" class="input">
+        <label for="aide">Les aides (allocations, etc) :</label><input value="0" type="number" id="aide" class="input">
+        <label for="rente">Les rentes ;</label><input value="0" type="number" id="rente" class="input">
+        <label for="autres">Autres :</label><input value="0" type="number" id="autres" class="input">
+        <button id="buttonRecette">calcule</button>
 
     </section>
 
     <section id="epargnes">
         <h2>Epargne</h2>
-        <label for="epargne">Epragne</label><input type="number" id="epargne" class="input">
+        <label for="epargne">Epragne</label><input value="0" type="number" id="epargne" class="input">
+        <button id="buttonEpargne">calcule</button>
 
     </section>
 
@@ -54,6 +56,8 @@
 
         <h3>total épargne</h3>
         <div id="result-epargne"></div>
+
+        <button id="buttonTotal">calcule</button>
 
         <h3>resultat total</h3>
         <div id="result">
